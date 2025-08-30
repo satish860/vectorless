@@ -118,23 +118,49 @@ class CUADSegmenter:
         }
     
     def print_segmentation_summary(self) -> None:
-        """Print a clean summary of the contract segmentation."""
+        """Print a clean summary of the contract segmentation with enhanced metadata."""
         result = self.segment_contract()
         
         cache_status = " (from cache)" if result.get('cached', False) else " (newly generated)"
         print(f"Contract: {result['contract_title']}")
         print(f"Total Sections: {result['total_sections']}{cache_status}")
-        print("\n" + "="*100)
+        print("\n" + "="*120)
         
         for i, section in enumerate(result['sections']):
             print(f"\nSection {i+1}: {section['title']}")
+            print(f"Legal Concept: {section.get('legal_concept', 'N/A')}")
             print(f"Lines: {section['start_index']}-{section['end_index']} ({section['line_count']} lines)")
+            
+            # Display enhanced summary with encoding handling
+            summary = section.get('summary', 'No summary available')
+            try:
+                print(f"Summary: {summary}")
+            except UnicodeEncodeError:
+                summary_clean = summary.encode('ascii', 'replace').decode('ascii')
+                print(f"Summary: {summary_clean}")
+            
+            # Display key terms for searchability
+            if section.get('key_terms'):
+                key_terms_str = ', '.join(section['key_terms'])
+                try:
+                    print(f"Key Search Terms: {key_terms_str}")
+                except UnicodeEncodeError:
+                    key_terms_clean = key_terms_str.encode('ascii', 'replace').decode('ascii')
+                    print(f"Key Search Terms: {key_terms_clean}")
+            
+            # Display reasoning if available
+            if section.get('reasoning'):
+                try:
+                    print(f"AI Reasoning: {section['reasoning']}")
+                except UnicodeEncodeError:
+                    reasoning_clean = section['reasoning'].encode('ascii', 'replace').decode('ascii')
+                    print(f"AI Reasoning: {reasoning_clean}")
             
             # Show section text with better formatting
             section_text = section['text'].strip()
             
             # Show first few lines of the section
-            lines = section_text.split('\n')[:5]  # First 5 lines
+            lines = section_text.split('\n')[:3]  # Reduced to 3 lines since we have more metadata now
             preview = '\n'.join(lines)
             
             print(f"Content Preview:")
@@ -146,10 +172,10 @@ class CUADSegmenter:
                 preview_clean = preview.encode('ascii', 'replace').decode('ascii')
                 print(f"   {preview_clean}")
             
-            if len(section['text'].split('\n')) > 5:
-                print(f"   ... ({len(section['text'].split('\n')) - 5} more lines)")
+            if len(section['text'].split('\n')) > 3:
+                print(f"   ... ({len(section['text'].split('\n')) - 3} more lines)")
             
-            print("-" * 100)
+            print("-" * 120)
 
 
 def demo_segmentation():
