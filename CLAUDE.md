@@ -12,6 +12,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **data/**: Contains JSON datasets including:
   - `CUADv1.json`: Contract Understanding Atticus Dataset with legal contract Q&A pairs
   - `test.json` and `train_separate_questions.json`: Training and test datasets
+- **sample_dataset/**: Contains sample data for development and testing:
+  - `sample_cuad.json`: First item from CUAD dataset with complete contract and 41 Q&A pairs
 - **pyproject.toml**: Project configuration using modern Python packaging standards
 
 ## Development Commands
@@ -51,3 +53,7 @@ The CUAD dataset contains legal contract analysis data structured as:
 ## RAG Implementation Goals
 
 This project aims to implement retrieval-augmented generation without traditional vector embeddings, exploring alternative approaches to document retrieval and question answering for legal contract analysis.
+
+## Current Context
+
+Current year: September 2025
