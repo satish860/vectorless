@@ -175,6 +175,9 @@ def get_sections_text(structured_doc: StructuredDocument, line2text: dict[int, s
     """
     sections = []
     
+    # Calculate character positions for each section
+    char_position = 0
+    
     for section in structured_doc.sections:
         # Extract text from start_index to end_index
         section_lines = []
@@ -184,10 +187,16 @@ def get_sections_text(structured_doc: StructuredDocument, line2text: dict[int, s
         
         section_text = "\n".join(section_lines)
         
+        # Calculate character start position for this section
+        section_char_start = char_position
+        section_char_end = char_position + len(section_text)
+        
         sections.append({
             "title": section.title,
             "start_index": section.start_index,
             "end_index": section.end_index,
+            "char_start": section_char_start,
+            "char_end": section_char_end,
             "text": section_text,
             "line_count": section.end_index - section.start_index + 1,
             "legal_concept": section.legal_concept,
@@ -197,6 +206,9 @@ def get_sections_text(structured_doc: StructuredDocument, line2text: dict[int, s
             # Create searchable content combining title, summary, and key terms for grep
             "searchable_content": f"{section.title} | {section.legal_concept} | {section.summary} | {' '.join(section.key_terms)}"
         })
+        
+        # Update character position for next section (add newline between sections)
+        char_position = section_char_end + 1
     
     return sections
 
