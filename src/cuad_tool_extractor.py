@@ -4,12 +4,53 @@ Simple CUAD extractor using native OpenAI tool calling (Claude Code style).
 
 import os
 import json
+import re
 from typing import List, Dict, Any
 from openai import OpenAI
 from dotenv import load_dotenv
 
 # Load environment variables
 load_dotenv()
+
+# Strict trigger patterns for conceptual clauses
+STRICT_TRIGGERS = {
+    "Non-Compete": [
+        r"\b(non[-\s]?compete|non[-\s]?competition)\b",
+        r"\bshall not\s+compete\b",
+        r"\bnot\s+compete\b"
+    ],
+    "Non-Transferable License": [
+        r"\b(non[-\s]?transferable)\b",
+        r"\bmay not transfer\b",
+        r"\bnot\s+assign\b.*\blicense\b"
+    ],
+    "Irrevocable Or Perpetual License": [
+        r"\birrevocable\b",
+        r"\bperpetual\b",
+        r"\bin perpetuity\b"
+    ],
+    "Termination For Convenience": [
+        r"\btermination\s+for\s+convenience\b",
+        r"\bmay terminate.*(for any reason|without cause)\b"
+    ],
+    "Cap On Liability": [
+        r"\b(liability|damages).*(cap|limit(ed)?\s+to|shall not exceed)\b"
+    ],
+    "Volume Restriction": [
+        r"\b(max(imum)?\s+volume|may not purchase more than|volume restriction)\b"
+    ],
+    "Affiliate License-Licensor": [
+        r"\blicensor\b.*\baffiliate(s)?\b.*\blicense\b"
+    ],
+    "Affiliate License-Licensee": [
+        r"\blicensee\b.*\baffiliate(s)?\b.*\blicense\b"
+    ],
+    "Competitive Restriction Exception": [
+        r"\bexcept(ion)?\b.*\b(competition|competitor|non[-\s]?compete)\b"
+    ],
+}
+
+STRICT_TYPES = set(STRICT_TRIGGERS.keys())
 
 
 class CUADToolExtractor:
@@ -651,7 +692,20 @@ COMMERCIAL TERMS CLAUSE - LAWYER'S FINANCIAL REVIEW APPROACH:
             for i in range(section_index):
                 full_doc_position += len(self.segmentation_data['sections'][i]['text']) + 1
             return full_doc_position + start_pos_in_section
-    
+
+    def _passes_strict_triggers(self, clause_type: str, texts: List[str]) -> bool:
+        """For strict clause types, require presence of explicit trigger phrases in any extracted text.
+
+        Returns True for non-strict types, or if any text matches at least one trigger pattern.
+        """
+        if clause_type not in STRICT_TYPES:
+            return True
+        patterns = [re.compile(p, re.IGNORECASE) for p in STRICT_TRIGGERS.get(clause_type, [])]
+        for t in texts:
+            if any(p.search(t or "") for p in patterns):
+                return True
+        return False
+
     def extract_clause(self, question: str, clause_type: str) -> Dict:
         """
         Extract clause using LLM with tool calling.
@@ -862,7 +916,16 @@ Use the available tools to search the document, examine relevant sections, and e
                                     ans['answer_start'] = pos
                                     # Remove section_index as it's no longer needed
                                     del ans['section_index']
-                        
+
+                        # Step A Guardrail: For strict types, require explicit trigger phrases
+                        texts = [a.get("text", "") for a in answer.get("answers", [])]
+                        if not self._passes_strict_triggers(clause_type, texts):
+                            return {
+                                "answers": [],
+                                "is_impossible": True,
+                                "reasoning": f"No trigger phrase found for strict clause '{clause_type}'. Guardrail set to impossible."
+                            }
+
                         return answer
                     except json.JSONDecodeError as e:
                         # Fallback if not valid JSON
