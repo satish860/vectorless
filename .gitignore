@@ -52,8 +52,8 @@ venv.bak/
 ehthumbs.db
 Thumbs.db
 
-# Segmentation results (optional - uncomment if you don't want to track these)
-# segmentation_results/
+# Segmentation results - generated files with API responses
+segmentation_results/
 
 # Jupyter Notebook
 .ipynb_checkpoints
