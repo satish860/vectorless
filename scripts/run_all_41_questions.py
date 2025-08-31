@@ -13,7 +13,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 import threading
 
 # Add src directory to path to import cuad_tool_extractor
-sys.path.append(str(Path(__file__).parent / "src"))
+sys.path.append(str(Path(__file__).parent.parent / "src"))
 
 try:
     from cuad_tool_extractor import CUADToolExtractor
@@ -25,7 +25,7 @@ except ImportError as e:
 
 def load_sample_questions(limit: int = 41) -> List[Dict[str, Any]]:
     """Load the first N questions from sample CUAD dataset."""
-    sample_path = Path("sample_dataset/sample_cuad.json")
+    sample_path = Path(__file__).parent.parent / "sample_dataset/sample_cuad.json"
     
     if not sample_path.exists():
         raise FileNotFoundError(f"Sample dataset not found at {sample_path}")
@@ -195,7 +195,7 @@ def main():
         extractor = CUADToolExtractor()
         
         # Load segmentation (you may need to adjust this path)
-        segmentation_file = Path("segmentation_results/LIMEENERGYCO_09_09_1999-EX-10-DISTRIBUTOR_AGREEMEN_cached.json")
+        segmentation_file = Path(__file__).parent.parent / "output/segmentation_results/LIMEENERGYCO_09_09_1999-EX-10-DISTRIBUTOR_AGREEMEN_cached.json"
         if not segmentation_file.exists():
             print(f"Warning: Segmentation file not found at {segmentation_file}")
             print("You may need to run document segmentation first")
@@ -280,7 +280,7 @@ def main():
                     print(f"   Error: {result['error']}")
         
         # Save detailed results
-        output_file = Path("all_41_questions_evaluation.json")
+        output_file = Path(__file__).parent.parent / "output" / "all_41_questions_evaluation.json"
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump({
                 "summary": {

@@ -1,0 +1,714 @@
+{
+  "contract_info": {
+    "index": 1,
+    "title": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT",
+    "processing_timestamp": "2025-08-31T10:36:25.668953",
+    "segmentation_cached": true,
+    "total_sections": 17
+  },
+  "summary": {
+    "total_questions": 41,
+    "avg_accuracy": 0.824390243902439,
+    "impossible_classification_accuracy": 0.8048780487804879,
+    "total_exact_matches": 23,
+    "total_partial_matches": 0,
+    "total_ground_truth_answers": 27,
+    "estimated_recall": 0.8518518518518519
+  },
+  "detailed_results": [
+    {
+      "question_id": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT__Document Name",
+      "clause_type": "Document Name",
+      "predicted_impossible": false,
+      "ground_truth_impossible": false,
+      "impossible_correct": true,
+      "text_matches": [
+        {
+          "predicted": "PROMOTION AND DISTRIBUTION AGREEMENT",
+          "best_ground_truth": "Promotion and Distribution Agreement",
+          "overlap_score": 1.0
+        },
+        {
+          "predicted": "This Promotion and Distribution Agreement including all exhibits",
+          "best_ground_truth": "Promotion and Distribution Agreement",
+          "overlap_score": 0.95
+        }
+      ],
+      "best_overlap": 1.0,
+      "exact_matches": 2,
+      "partial_matches": 0,
+      "total_ground_truth": 1,
+      "question_number": 1
+    },
+    {
+      "question_id": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT__Parties",
+      "clause_type": "Parties",
+      "predicted_impossible": false,
+      "ground_truth_impossible": false,
+      "impossible_correct": true,
+      "text_matches": [
+        {
+          "predicted": "Whitesmoke Inc.",
+          "best_ground_truth": "Whitesmoke Inc.",
+          "overlap_score": 1.0
+        },
+        {
+          "predicted": "Distributor",
+          "best_ground_truth": "Distributor",
+          "overlap_score": 1.0
+        },
+        {
+          "predicted": "Google Inc",
+          "best_ground_truth": "Google Inc",
+          "overlap_score": 1.0
+        },
+        {
+          "predicted": "Google",
+          "best_ground_truth": "Google",
+          "overlap_score": 1.0
+        }
+      ],
+      "best_overlap": 1.0,
+      "exact_matches": 4,
+      "partial_matches": 0,
+      "total_ground_truth": 4,
+      "question_number": 2
+    },
+    {
+      "question_id": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT__Agreement Date",
+      "clause_type": "Agreement Date",
+      "predicted_impossible": false,
+      "ground_truth_impossible": true,
+      "impossible_correct": false,
+      "text_matches": [],
+      "best_overlap": 0.0,
+      "exact_matches": 0,
+      "partial_matches": 0,
+      "total_ground_truth": 0,
+      "question_number": 3
+    },
+    {
+      "question_id": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT__Effective Date",
+      "clause_type": "Effective Date",
+      "predicted_impossible": true,
+      "ground_truth_impossible": false,
+      "impossible_correct": false,
+      "text_matches": [],
+      "best_overlap": 0.0,
+      "exact_matches": 0,
+      "partial_matches": 0,
+      "total_ground_truth": 1,
+      "question_number": 4
+    },
+    {
+      "question_id": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT__Expiration Date",
+      "clause_type": "Expiration Date",
+      "predicted_impossible": false,
+      "ground_truth_impossible": false,
+      "impossible_correct": true,
+      "text_matches": [
+        {
+          "predicted": "effective as of 1 August 2011 (the  \"Effective Date\"), is made by and between Whitesmoke Inc., with ...",
+          "best_ground_truth": "This Agreement shall commence on the Effective Date and, unless earlier terminated as set out in thi...",
+          "overlap_score": 0.1
+        },
+        {
+          "predicted": "\"Term\" means the earlier of: (a) the end of the two year period from the Effective Date to 31 July 2...",
+          "best_ground_truth": "\"Term\" means the earlier of: (a) the end of the two year period from the Effective Date to 31 July 2...",
+          "overlap_score": 1.0
+        },
+        {
+          "predicted": "5.1 Term. This Agreement shall commence on the Effective Date and, unless earlier terminated as set ...",
+          "best_ground_truth": "This Agreement shall commence on the Effective Date and, unless earlier terminated as set out in thi...",
+          "overlap_score": 0.95
+        }
+      ],
+      "best_overlap": 1.0,
+      "exact_matches": 2,
+      "partial_matches": 0,
+      "total_ground_truth": 2,
+      "question_number": 5
+    },
+    {
+      "question_id": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT__Renewal Term",
+      "clause_type": "Renewal Term",
+      "predicted_impossible": true,
+      "ground_truth_impossible": true,
+      "impossible_correct": true,
+      "text_matches": [],
+      "best_overlap": 1.0,
+      "exact_matches": 0,
+      "partial_matches": 0,
+      "total_ground_truth": 0,
+      "question_number": 6
+    },
+    {
+      "question_id": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT__Notice Period To Terminate Renewal",
+      "clause_type": "Notice Period To Terminate Renewal",
+      "predicted_impossible": true,
+      "ground_truth_impossible": true,
+      "impossible_correct": true,
+      "text_matches": [],
+      "best_overlap": 1.0,
+      "exact_matches": 0,
+      "partial_matches": 0,
+      "total_ground_truth": 0,
+      "question_number": 7
+    },
+    {
+      "question_id": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT__Governing Law",
+      "clause_type": "Governing Law",
+      "predicted_impossible": false,
+      "ground_truth_impossible": false,
+      "impossible_correct": true,
+      "text_matches": [
+        {
+          "predicted": "This Agreement is governed by English law and the parties submit to the exclusive jurisdiction of th...",
+          "best_ground_truth": "This Agreement is governed by English law and the parties submit to the exclusive jurisdiction of th...",
+          "overlap_score": 0.95
+        }
+      ],
+      "best_overlap": 0.95,
+      "exact_matches": 1,
+      "partial_matches": 0,
+      "total_ground_truth": 1,
+      "question_number": 8
+    },
+    {
+      "question_id": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT__Most Favored Nation",
+      "clause_type": "Most Favored Nation",
+      "predicted_impossible": true,
+      "ground_truth_impossible": true,
+      "impossible_correct": true,
+      "text_matches": [],
+      "best_overlap": 1.0,
+      "exact_matches": 0,
+      "partial_matches": 0,
+      "total_ground_truth": 0,
+      "question_number": 9
+    },
+    {
+      "question_id": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT__Non-Compete",
+      "clause_type": "Non-Compete",
+      "predicted_impossible": true,
+      "ground_truth_impossible": true,
+      "impossible_correct": true,
+      "text_matches": [],
+      "best_overlap": 1.0,
+      "exact_matches": 0,
+      "partial_matches": 0,
+      "total_ground_truth": 0,
+      "question_number": 10
+    },
+    {
+      "question_id": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT__Exclusivity",
+      "clause_type": "Exclusivity",
+      "predicted_impossible": false,
+      "ground_truth_impossible": true,
+      "impossible_correct": false,
+      "text_matches": [],
+      "best_overlap": 0.0,
+      "exact_matches": 0,
+      "partial_matches": 0,
+      "total_ground_truth": 0,
+      "question_number": 11
+    },
+    {
+      "question_id": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT__No-Solicit Of Customers",
+      "clause_type": "No-Solicit Of Customers",
+      "predicted_impossible": true,
+      "ground_truth_impossible": true,
+      "impossible_correct": true,
+      "text_matches": [],
+      "best_overlap": 1.0,
+      "exact_matches": 0,
+      "partial_matches": 0,
+      "total_ground_truth": 0,
+      "question_number": 12
+    },
+    {
+      "question_id": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT__Competitive Restriction Exception",
+      "clause_type": "Competitive Restriction Exception",
+      "predicted_impossible": true,
+      "ground_truth_impossible": true,
+      "impossible_correct": true,
+      "text_matches": [],
+      "best_overlap": 1.0,
+      "exact_matches": 0,
+      "partial_matches": 0,
+      "total_ground_truth": 0,
+      "question_number": 13
+    },
+    {
+      "question_id": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT__No-Solicit Of Employees",
+      "clause_type": "No-Solicit Of Employees",
+      "predicted_impossible": true,
+      "ground_truth_impossible": true,
+      "impossible_correct": true,
+      "text_matches": [],
+      "best_overlap": 1.0,
+      "exact_matches": 0,
+      "partial_matches": 0,
+      "total_ground_truth": 0,
+      "question_number": 14
+    },
+    {
+      "question_id": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT__Non-Disparagement",
+      "clause_type": "Non-Disparagement",
+      "predicted_impossible": true,
+      "ground_truth_impossible": true,
+      "impossible_correct": true,
+      "text_matches": [],
+      "best_overlap": 1.0,
+      "exact_matches": 0,
+      "partial_matches": 0,
+      "total_ground_truth": 0,
+      "question_number": 15
+    },
+    {
+      "question_id": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT__Termination For Convenience",
+      "clause_type": "Termination For Convenience",
+      "predicted_impossible": true,
+      "ground_truth_impossible": true,
+      "impossible_correct": true,
+      "text_matches": [],
+      "best_overlap": 1.0,
+      "exact_matches": 0,
+      "partial_matches": 0,
+      "total_ground_truth": 0,
+      "question_number": 16
+    },
+    {
+      "question_id": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT__Rofr/Rofo/Rofn",
+      "clause_type": "Rofr/Rofo/Rofn",
+      "predicted_impossible": true,
+      "ground_truth_impossible": true,
+      "impossible_correct": true,
+      "text_matches": [],
+      "best_overlap": 1.0,
+      "exact_matches": 0,
+      "partial_matches": 0,
+      "total_ground_truth": 0,
+      "question_number": 17
+    },
+    {
+      "question_id": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT__Change Of Control",
+      "clause_type": "Change Of Control",
+      "predicted_impossible": false,
+      "ground_truth_impossible": false,
+      "impossible_correct": true,
+      "text_matches": [
+        {
+          "predicted": "5.4 Change of Control. [ * ] may terminate this Agreement immediately upon written notice if there i...",
+          "best_ground_truth": "[ * ] may terminate this Agreement immediately upon written notice if there is a Change of Control o...",
+          "overlap_score": 0.95
+        },
+        {
+          "predicted": "[ * ] expected to experience, or [ * ] is experiencing, such  Change of Control shall notify [ * ] i...",
+          "best_ground_truth": "[ * ] expected to experience, or [ * ] is experiencing, such  Change of Control shall notify [ * ] i...",
+          "overlap_score": 1.0
+        },
+        {
+          "predicted": "If [ * ] has not exercised its right of  termination under this Clause within [ * ] following the la...",
+          "best_ground_truth": "[ * ] expected to experience, or [ * ] is experiencing, such  Change of Control shall notify [ * ] i...",
+          "overlap_score": 0.45454545454545453
+        },
+        {
+          "predicted": "For the avoidance of doubt, if following [ * ] there is a transfer of shareholding or interests in D...",
+          "best_ground_truth": "For the avoidance of doubt, if following [ * ] there is a transfer of shareholding or interests in D...",
+          "overlap_score": 1.0
+        },
+        {
+          "predicted": "11.3 Assignment. [ * ] may [ * ]any of its rights or obligations under this Agreement without the pr...",
+          "best_ground_truth": "For the  avoidance of doubt, a Change of Control shall be deemed an assignment hereunder unless [ * ...",
+          "overlap_score": 0.95
+        }
+      ],
+      "best_overlap": 1.0,
+      "exact_matches": 4,
+      "partial_matches": 0,
+      "total_ground_truth": 4,
+      "question_number": 18
+    },
+    {
+      "question_id": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT__Anti-Assignment",
+      "clause_type": "Anti-Assignment",
+      "predicted_impossible": false,
+      "ground_truth_impossible": false,
+      "impossible_correct": true,
+      "text_matches": [
+        {
+          "predicted": "[ * ] may [ * ]any of its rights or obligations under this Agreement without the prior written conse...",
+          "best_ground_truth": "[ * ] may [ * ]any of its rights or obligations under this Agreement without the prior written conse...",
+          "overlap_score": 0.95
+        }
+      ],
+      "best_overlap": 0.95,
+      "exact_matches": 1,
+      "partial_matches": 0,
+      "total_ground_truth": 1,
+      "question_number": 19
+    },
+    {
+      "question_id": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT__Revenue/Profit Sharing",
+      "clause_type": "Revenue/Profit Sharing",
+      "predicted_impossible": true,
+      "ground_truth_impossible": true,
+      "impossible_correct": true,
+      "text_matches": [],
+      "best_overlap": 1.0,
+      "exact_matches": 0,
+      "partial_matches": 0,
+      "total_ground_truth": 0,
+      "question_number": 20
+    },
+    {
+      "question_id": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT__Price Restrictions",
+      "clause_type": "Price Restrictions",
+      "predicted_impossible": false,
+      "ground_truth_impossible": true,
+      "impossible_correct": false,
+      "text_matches": [],
+      "best_overlap": 0.0,
+      "exact_matches": 0,
+      "partial_matches": 0,
+      "total_ground_truth": 0,
+      "question_number": 21
+    },
+    {
+      "question_id": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT__Minimum Commitment",
+      "clause_type": "Minimum Commitment",
+      "predicted_impossible": true,
+      "ground_truth_impossible": true,
+      "impossible_correct": true,
+      "text_matches": [],
+      "best_overlap": 1.0,
+      "exact_matches": 0,
+      "partial_matches": 0,
+      "total_ground_truth": 0,
+      "question_number": 22
+    },
+    {
+      "question_id": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT__Volume Restriction",
+      "clause_type": "Volume Restriction",
+      "predicted_impossible": true,
+      "ground_truth_impossible": true,
+      "impossible_correct": true,
+      "text_matches": [],
+      "best_overlap": 1.0,
+      "exact_matches": 0,
+      "partial_matches": 0,
+      "total_ground_truth": 0,
+      "question_number": 23
+    },
+    {
+      "question_id": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT__Ip Ownership Assignment",
+      "clause_type": "Ip Ownership Assignment",
+      "predicted_impossible": false,
+      "ground_truth_impossible": true,
+      "impossible_correct": false,
+      "text_matches": [],
+      "best_overlap": 0.0,
+      "exact_matches": 0,
+      "partial_matches": 0,
+      "total_ground_truth": 0,
+      "question_number": 24
+    },
+    {
+      "question_id": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT__Joint Ip Ownership",
+      "clause_type": "Joint Ip Ownership",
+      "predicted_impossible": true,
+      "ground_truth_impossible": true,
+      "impossible_correct": true,
+      "text_matches": [],
+      "best_overlap": 1.0,
+      "exact_matches": 0,
+      "partial_matches": 0,
+      "total_ground_truth": 0,
+      "question_number": 25
+    },
+    {
+      "question_id": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT__License Grant",
+      "clause_type": "License Grant",
+      "predicted_impossible": false,
+      "ground_truth_impossible": false,
+      "impossible_correct": true,
+      "text_matches": [
+        {
+          "predicted": "Subject to the terms and conditions of this Agreement, Google grants to Distributor a [* ] license d...",
+          "best_ground_truth": "Subject to the terms and conditions of this Agreement, Google grants to Distributor a [* ] license d...",
+          "overlap_score": 1.0
+        },
+        {
+          "predicted": "Subject to the terms and conditions of this Agreement, Google grants to Distributor a limited, [ * ]...",
+          "best_ground_truth": "Subject to the terms and conditions of this Agreement, Google grants to Distributor a limited, [ * ]...",
+          "overlap_score": 0.95
+        },
+        {
+          "predicted": "Distributor acknowledges that Google and/or its licensors own all right, title and interest, includi...",
+          "best_ground_truth": "Subject to the terms and conditions of this Agreement, Google grants to Distributor a limited, [ * ]...",
+          "overlap_score": 0.28888888888888886
+        }
+      ],
+      "best_overlap": 1.0,
+      "exact_matches": 2,
+      "partial_matches": 0,
+      "total_ground_truth": 2,
+      "question_number": 26
+    },
+    {
+      "question_id": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT__Non-Transferable License",
+      "clause_type": "Non-Transferable License",
+      "predicted_impossible": true,
+      "ground_truth_impossible": true,
+      "impossible_correct": true,
+      "text_matches": [],
+      "best_overlap": 1.0,
+      "exact_matches": 0,
+      "partial_matches": 0,
+      "total_ground_truth": 0,
+      "question_number": 27
+    },
+    {
+      "question_id": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT__Affiliate License-Licensor",
+      "clause_type": "Affiliate License-Licensor",
+      "predicted_impossible": true,
+      "ground_truth_impossible": true,
+      "impossible_correct": true,
+      "text_matches": [],
+      "best_overlap": 1.0,
+      "exact_matches": 0,
+      "partial_matches": 0,
+      "total_ground_truth": 0,
+      "question_number": 28
+    },
+    {
+      "question_id": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT__Affiliate License-Licensee",
+      "clause_type": "Affiliate License-Licensee",
+      "predicted_impossible": true,
+      "ground_truth_impossible": true,
+      "impossible_correct": true,
+      "text_matches": [],
+      "best_overlap": 1.0,
+      "exact_matches": 0,
+      "partial_matches": 0,
+      "total_ground_truth": 0,
+      "question_number": 29
+    },
+    {
+      "question_id": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT__Unlimited/All-You-Can-Eat-License",
+      "clause_type": "Unlimited/All-You-Can-Eat-License",
+      "predicted_impossible": true,
+      "ground_truth_impossible": true,
+      "impossible_correct": true,
+      "text_matches": [],
+      "best_overlap": 1.0,
+      "exact_matches": 0,
+      "partial_matches": 0,
+      "total_ground_truth": 0,
+      "question_number": 30
+    },
+    {
+      "question_id": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT__Irrevocable Or Perpetual License",
+      "clause_type": "Irrevocable Or Perpetual License",
+      "predicted_impossible": true,
+      "ground_truth_impossible": true,
+      "impossible_correct": true,
+      "text_matches": [],
+      "best_overlap": 1.0,
+      "exact_matches": 0,
+      "partial_matches": 0,
+      "total_ground_truth": 0,
+      "question_number": 31
+    },
+    {
+      "question_id": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT__Source Code Escrow",
+      "clause_type": "Source Code Escrow",
+      "predicted_impossible": true,
+      "ground_truth_impossible": true,
+      "impossible_correct": true,
+      "text_matches": [],
+      "best_overlap": 1.0,
+      "exact_matches": 0,
+      "partial_matches": 0,
+      "total_ground_truth": 0,
+      "question_number": 32
+    },
+    {
+      "question_id": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT__Post-Termination Services",
+      "clause_type": "Post-Termination Services",
+      "predicted_impossible": false,
+      "ground_truth_impossible": true,
+      "impossible_correct": false,
+      "text_matches": [],
+      "best_overlap": 0.0,
+      "exact_matches": 0,
+      "partial_matches": 0,
+      "total_ground_truth": 0,
+      "question_number": 33
+    },
+    {
+      "question_id": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT__Audit Rights",
+      "clause_type": "Audit Rights",
+      "predicted_impossible": false,
+      "ground_truth_impossible": false,
+      "impossible_correct": true,
+      "text_matches": [
+        {
+          "predicted": "Distributor will keep and maintain complete and accurate books, records, and accounts relating to th...",
+          "best_ground_truth": "During the Term, and for a period of [ * ] thereafter, Google may audit Distributor's relevant recor...",
+          "overlap_score": 0.95
+        }
+      ],
+      "best_overlap": 0.95,
+      "exact_matches": 1,
+      "partial_matches": 0,
+      "total_ground_truth": 1,
+      "question_number": 34
+    },
+    {
+      "question_id": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT__Uncapped Liability",
+      "clause_type": "Uncapped Liability",
+      "predicted_impossible": false,
+      "ground_truth_impossible": false,
+      "impossible_correct": true,
+      "text_matches": [
+        {
+          "predicted": "Nothing in this Agreement shall exclude or limit either party's liability for: (a) death or personal...",
+          "best_ground_truth": "(c) breach of any implied condition as to title or quiet enjoyment; and\n\n  (d) misuse of confidentia...",
+          "overlap_score": 0.95
+        },
+        {
+          "predicted": "Nothing in this Agreement shall exclude or limit either party's liability under Clause 10 (Indemniti...",
+          "best_ground_truth": "Nothing in this Agreement shall exclude or limit either party's liability under Clause 10 (Indemniti...",
+          "overlap_score": 1.0
+        },
+        {
+          "predicted": "Google [ * ] and will indemnify Distributor against all liabilities, costs, damages and expenses (in...",
+          "best_ground_truth": "(c) breach of any implied condition as to title or quiet enjoyment; and\n\n  (d) misuse of confidentia...",
+          "overlap_score": 0.35294117647058826
+        }
+      ],
+      "best_overlap": 1.0,
+      "exact_matches": 2,
+      "partial_matches": 0,
+      "total_ground_truth": 5,
+      "question_number": 35
+    },
+    {
+      "question_id": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT__Cap On Liability",
+      "clause_type": "Cap On Liability",
+      "predicted_impossible": false,
+      "ground_truth_impossible": false,
+      "impossible_correct": true,
+      "text_matches": [
+        {
+          "predicted": "9.4 Subject to Clauses 9.1 and 9.2, each party's total liability under or in connection with this Ag...",
+          "best_ground_truth": "Subject to Clauses 9.1 and 9.2, each party's total liability under or in connection with this Agreem...",
+          "overlap_score": 0.95
+        },
+        {
+          "predicted": "9.1 Nothing in this Agreement shall exclude or limit either party's liability for:\n\n  (a) death or p...",
+          "best_ground_truth": "Subject to Clauses 9.1 and 9.2, each party's total liability under or in connection with this Agreem...",
+          "overlap_score": 0.22448979591836735
+        },
+        {
+          "predicted": "  (c) breach of any implied condition as to title or quiet enjoyment; and\n\n  (d) misuse of confident...",
+          "best_ground_truth": "The foregoing Clauses 10.1 to 10.5 states the parties' entire liability and exclusive remedy with re...",
+          "overlap_score": 0.13043478260869565
+        },
+        {
+          "predicted": "9.3 Subject to Clauses 9.1 and 9.2, neither party shall be liable under this Agreement (whether in c...",
+          "best_ground_truth": "Subject to Clauses 9.1 and 9.2, neither party shall be liable under this Agreement (whether in contr...",
+          "overlap_score": 0.95
+        },
+        {
+          "predicted": "10.6 The foregoing Clauses 10.1 to 10.5 states the parties' entire liability and exclusive remedy wi...",
+          "best_ground_truth": "The foregoing Clauses 10.1 to 10.5 states the parties' entire liability and exclusive remedy with re...",
+          "overlap_score": 0.95
+        },
+        {
+          "predicted": "5.2 Termination for breach. A party may suspend performance and/or terminate this Agreement, with im...",
+          "best_ground_truth": "The foregoing Clauses 10.1 to 10.5 states the parties' entire liability and exclusive remedy with re...",
+          "overlap_score": 0.30434782608695654
+        }
+      ],
+      "best_overlap": 0.95,
+      "exact_matches": 3,
+      "partial_matches": 0,
+      "total_ground_truth": 4,
+      "question_number": 36
+    },
+    {
+      "question_id": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT__Liquidated Damages",
+      "clause_type": "Liquidated Damages",
+      "predicted_impossible": true,
+      "ground_truth_impossible": true,
+      "impossible_correct": true,
+      "text_matches": [],
+      "best_overlap": 1.0,
+      "exact_matches": 0,
+      "partial_matches": 0,
+      "total_ground_truth": 0,
+      "question_number": 37
+    },
+    {
+      "question_id": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT__Warranty Duration",
+      "clause_type": "Warranty Duration",
+      "predicted_impossible": true,
+      "ground_truth_impossible": false,
+      "impossible_correct": false,
+      "text_matches": [
+        {
+          "predicted": "Google warrants that the Distribution Products will for a period of [ * ] from the date of their sup...",
+          "best_ground_truth": "Google warrants that the Distribution Products will for a period of [ * ] from the date of their sup...",
+          "overlap_score": 1.0
+        }
+      ],
+      "best_overlap": 1.0,
+      "exact_matches": 1,
+      "partial_matches": 0,
+      "total_ground_truth": 1,
+      "question_number": 38
+    },
+    {
+      "question_id": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT__Insurance",
+      "clause_type": "Insurance",
+      "predicted_impossible": true,
+      "ground_truth_impossible": true,
+      "impossible_correct": true,
+      "text_matches": [],
+      "best_overlap": 1.0,
+      "exact_matches": 0,
+      "partial_matches": 0,
+      "total_ground_truth": 0,
+      "question_number": 39
+    },
+    {
+      "question_id": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT__Covenant Not To Sue",
+      "clause_type": "Covenant Not To Sue",
+      "predicted_impossible": true,
+      "ground_truth_impossible": true,
+      "impossible_correct": true,
+      "text_matches": [],
+      "best_overlap": 1.0,
+      "exact_matches": 0,
+      "partial_matches": 0,
+      "total_ground_truth": 0,
+      "question_number": 40
+    },
+    {
+      "question_id": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT__Third Party Beneficiary",
+      "clause_type": "Third Party Beneficiary",
+      "predicted_impossible": false,
+      "ground_truth_impossible": true,
+      "impossible_correct": false,
+      "text_matches": [],
+      "best_overlap": 0.0,
+      "exact_matches": 0,
+      "partial_matches": 0,
+      "total_ground_truth": 0,
+      "question_number": 41
+    }
+  ]
+}

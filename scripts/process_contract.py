@@ -9,13 +9,12 @@ import sys
 import os
 import argparse
 from pathlib import Path
-from typing import List, Dict, Any, Optional, Tuple
+from typing import List, Dict, Any, Tuple
 from concurrent.futures import ThreadPoolExecutor, as_completed
-import threading
 from datetime import datetime
 
 # Add src directory to path
-sys.path.append(str(Path(__file__).parent / "src"))
+sys.path.append(str(Path(__file__).parent.parent / "src"))
 
 try:
     from cuad_tool_extractor import CUADToolExtractor
@@ -36,14 +35,18 @@ class ContractProcessor:
         Args:
             cuad_dataset_path: Path to the CUAD dataset JSON file
         """
+        # Adjust path to be relative to project root
+        if not os.path.isabs(cuad_dataset_path):
+            cuad_dataset_path = str(Path(__file__).parent.parent / cuad_dataset_path)
         self.cuad_dataset_path = cuad_dataset_path
         self.cuad_data = None
         self.extractor = None
         self._load_cuad_dataset()
         
-        # Ensure results directory exists
-        os.makedirs("results", exist_ok=True)
-        os.makedirs("segmentation_results", exist_ok=True)
+        # Ensure output directories exist relative to project root
+        project_root = Path(__file__).parent.parent
+        os.makedirs(project_root / "output" / "results", exist_ok=True)
+        os.makedirs(project_root / "output" / "segmentation_results", exist_ok=True)
     
     def _load_cuad_dataset(self):
         """Load the CUAD dataset."""
@@ -122,7 +125,8 @@ class ContractProcessor:
         # Clean filename - remove special characters
         clean_title = "".join(c for c in contract_title if c.isalnum() or c in (' ', '-', '_')).rstrip()
         clean_title = clean_title.replace(' ', '_')[:50]  # Limit length
-        return f"segmentation_results/{clean_title}_cached.json"
+        project_root = Path(__file__).parent.parent
+        return str(project_root / "output" / "segmentation_results" / f"{clean_title}_cached.json")
     
     def get_segmentation(self, contract_text: str, contract_title: str, force_new: bool = False) -> Dict[str, Any]:
         """
@@ -508,7 +512,8 @@ class ContractProcessor:
         }
         
         # Save to file
-        results_filename = f"results/{title.replace(' ', '_')[:50]}_extraction_results.json"
+        project_root = Path(__file__).parent.parent
+        results_filename = str(project_root / "output" / "results" / f"{title.replace(' ', '_')[:50]}_extraction_results.json")
         with open(results_filename, 'w', encoding='utf-8') as f:
             json.dump(result_data, f, indent=2, ensure_ascii=False)
         
@@ -563,7 +568,8 @@ class ContractProcessor:
             "results": batch_results
         }
         
-        batch_filename = f"results/batch_{start_index}_{end_index-1}_results.json"
+        project_root = Path(__file__).parent.parent
+        batch_filename = str(project_root / "output" / "results" / f"batch_{start_index}_{end_index-1}_results.json")
         with open(batch_filename, 'w', encoding='utf-8') as f:
             json.dump(batch_summary, f, indent=2, ensure_ascii=False)
         
