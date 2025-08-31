@@ -1,0 +1,188 @@
+{
+  "timestamp": "2025-08-31 14:17:26",
+  "total_pdfs": 20,
+  "successful": 19,
+  "already_existed": 0,
+  "failed": 1,
+  "results": [
+    {
+      "pdf_name": "2779336b845a41544348abb7b3e6e5bd2ff893a2.pdf",
+      "company": "Tradition",
+      "output_file": "C:\\Source\\vectorless\\data\\enterprise\\markdown\\Tradition_2779336b845a41544348abb7b3e6e5bd2ff893a2.md",
+      "status": "converted",
+      "processing_time": 18.44306778907776,
+      "total_pages": 152,
+      "markdown_size": 331218
+    },
+    {
+      "pdf_name": "194000c9109c6fa628f1fed33b44ae4c2b8365f4.pdf",
+      "company": "Holley Inc.",
+      "output_file": "C:\\Source\\vectorless\\data\\enterprise\\markdown\\Holley_Inc_194000c9109c6fa628f1fed33b44ae4c2b8365f4.md",
+      "status": "converted",
+      "processing_time": 18.80182123184204,
+      "total_pages": 131,
+      "markdown_size": 466949
+    },
+    {
+      "pdf_name": "43437bccca01aeae222ec7cc706ba3eaf50be2d7.pdf",
+      "company": "ENRG ELEMENTS LIMITED",
+      "output_file": "C:\\Source\\vectorless\\data\\enterprise\\markdown\\ENRG_ELEMENTS_LIMITED_43437bccca01aeae222ec7cc706ba3eaf50be2d7.md",
+      "status": "converted",
+      "processing_time": 45.49795889854431,
+      "total_pages": 75,
+      "markdown_size": 202223
+    },
+    {
+      "pdf_name": "84749ef5c2bbf2a302b6614f31727a95bf29f309.pdf",
+      "company": "BAKER STEEL RESOURCES TRUST LIMITED",
+      "output_file": "C:\\Source\\vectorless\\data\\enterprise\\markdown\\BAKER_STEEL_RESOURCES_TRUST_LIMITED_84749ef5c2bbf2a302b6614f31727a95bf29f309.md",
+      "status": "converted",
+      "processing_time": 16.17339038848877,
+      "total_pages": 68,
+      "markdown_size": 211512
+    },
+    {
+      "pdf_name": "6054ec55767fbe6585598ced7afacf5cb8619a13.pdf",
+      "company": "MITSUI O.S.K. LINES",
+      "output_file": "C:\\Source\\vectorless\\data\\enterprise\\markdown\\MITSUI_OSK_LINES_6054ec55767fbe6585598ced7afacf5cb8619a13.md",
+      "status": "converted",
+      "processing_time": 57.817561626434326,
+      "total_pages": 43,
+      "markdown_size": 387257
+    },
+    {
+      "pdf_name": "85fb23ba2910de45e27f8f40170c0f3576043916.pdf",
+      "company": "TransUnion",
+      "output_file": "C:\\Source\\vectorless\\data\\enterprise\\markdown\\TransUnion_85fb23ba2910de45e27f8f40170c0f3576043916.md",
+      "status": "converted",
+      "processing_time": 22.571410179138184,
+      "total_pages": 167,
+      "markdown_size": 554565
+    },
+    {
+      "pdf_name": "9d7a72445aba6860402c3acce75af02dc045f74d.pdf",
+      "company": "TSX_Y",
+      "output_file": "C:\\Source\\vectorless\\data\\enterprise\\markdown\\TSX_Y_9d7a72445aba6860402c3acce75af02dc045f74d.md",
+      "status": "converted",
+      "processing_time": 12.747596979141235,
+      "total_pages": 77,
+      "markdown_size": 264525
+    },
+    {
+      "pdf_name": "a8077fe1983a64dc77bddfafbf48242e66111a89.pdf",
+      "company": "PowerFleet, Inc.",
+      "output_file": "C:\\Source\\vectorless\\data\\enterprise\\markdown\\PowerFleet_Inc_a8077fe1983a64dc77bddfafbf48242e66111a89.md",
+      "status": "converted",
+      "processing_time": 20.36735463142395,
+      "total_pages": 96,
+      "markdown_size": 378287
+    },
+    {
+      "pdf_name": "a706b44ba275c97b8633b0808cd2f90cbb7fe473.pdf",
+      "company": "Oesterreichische Kontrollbank",
+      "output_file": "C:\\Source\\vectorless\\data\\enterprise\\markdown\\Oesterreichische_Kontrollbank_a706b44ba275c97b8633b0808cd2f90cbb7fe473.md",
+      "status": "converted",
+      "processing_time": 27.375151872634888,
+      "total_pages": 207,
+      "markdown_size": 539045
+    },
+    {
+      "pdf_name": "ac9aa244462c80705c3ff046542c02c459989742.pdf",
+      "company": "Mercia Asset Management PLC",
+      "output_file": "C:\\Source\\vectorless\\data\\enterprise\\markdown\\Mercia_Asset_Management_PLC_ac9aa244462c80705c3ff046542c02c459989742.md",
+      "status": "converted",
+      "processing_time": 20.22088599205017,
+      "total_pages": 120,
+      "markdown_size": 358519
+    },
+    {
+      "pdf_name": "cbd8fb252e8743dc53961adc53e2b4de9ff6037a.pdf",
+      "company": "Tower Semiconductor Ltd.",
+      "output_file": "C:\\Source\\vectorless\\data\\enterprise\\markdown\\Tower_Semiconductor_Ltd_cbd8fb252e8743dc53961adc53e2b4de9ff6037a.md",
+      "status": "converted",
+      "processing_time": 22.618377447128296,
+      "total_pages": 158,
+      "markdown_size": 495646
+    },
+    {
+      "pdf_name": "609042c64a759c0ac63e7cf18742be4dd3cc5cd5.pdf",
+      "company": "Petra Diamonds",
+      "output_file": "C:\\Source\\vectorless\\data\\enterprise\\markdown\\Petra_Diamonds_609042c64a759c0ac63e7cf18742be4dd3cc5cd5.md",
+      "status": "converted",
+      "processing_time": 157.70553588867188,
+      "total_pages": 224,
+      "markdown_size": 889889
+    },
+    {
+      "pdf_name": "e0d6bb578bfc233c3bdbded229960fed01624631.pdf",
+      "company": "Creative Media & Community Trust Corporation",
+      "output_file": "C:\\Source\\vectorless\\data\\enterprise\\markdown\\Creative_Media__Community_Trust_Corporation_e0d6bb578bfc233c3bdbded229960fed01624631.md",
+      "status": "converted",
+      "processing_time": 31.76769733428955,
+      "total_pages": 195,
+      "markdown_size": 795047
+    },
+    {
+      "pdf_name": "e33544bdea57faa0ad10ba2e93bf052482f33325.pdf",
+      "company": "Sensata",
+      "output_file": "C:\\Source\\vectorless\\data\\enterprise\\markdown\\Sensata_e33544bdea57faa0ad10ba2e93bf052482f33325.md",
+      "status": "converted",
+      "processing_time": 24.65723466873169,
+      "total_pages": 140,
+      "markdown_size": 532225
+    },
+    {
+      "pdf_name": "ba5852cb6c20da35da2ce6ebaafc711d06fe8c1e.pdf",
+      "company": "Caixa Geral de Dep\u00f3sitos, S.A.",
+      "output_file": "C:\\Source\\vectorless\\data\\enterprise\\markdown\\Caixa_Geral_de_Dep\u00f3sitos_SA_ba5852cb6c20da35da2ce6ebaafc711d06fe8c1e.md",
+      "status": "converted",
+      "processing_time": 102.67983746528625,
+      "total_pages": 681,
+      "markdown_size": 2081696
+    },
+    {
+      "pdf_name": "e765cdd472cb47fa74ee6a52700c61aca645bbee.pdf",
+      "company": "First Mid Bancshares, Inc.",
+      "output_file": "C:\\Source\\vectorless\\data\\enterprise\\markdown\\First_Mid_Bancshares_Inc_e765cdd472cb47fa74ee6a52700c61aca645bbee.md",
+      "status": "failed",
+      "processing_time": 1.4840500354766846,
+      "error": "API error occurred: Status 503\n{\"object\":\"error\",\"message\":\"Service unavailable.\",\"type\":\"internal_server_error\",\"param\":null,\"code\":\"1000\"}"
+    },
+    {
+      "pdf_name": "e62b2ebe3012cd7e6c57507bc950a46d06b3d06e.pdf",
+      "company": "Sleep Country Canada Holdings Inc.",
+      "output_file": "C:\\Source\\vectorless\\data\\enterprise\\markdown\\Sleep_Country_Canada_Holdings_Inc_e62b2ebe3012cd7e6c57507bc950a46d06b3d06e.md",
+      "status": "converted",
+      "processing_time": 15.003041982650757,
+      "total_pages": 88,
+      "markdown_size": 221369
+    },
+    {
+      "pdf_name": "f06d7ecc8072de616a4ea35c74e20199de6b0691.pdf",
+      "company": "Safe & Green Holdings Corp.",
+      "output_file": "C:\\Source\\vectorless\\data\\enterprise\\markdown\\Safe__Green_Holdings_Corp_f06d7ecc8072de616a4ea35c74e20199de6b0691.md",
+      "status": "converted",
+      "processing_time": 19.70810341835022,
+      "total_pages": 128,
+      "markdown_size": 481709
+    },
+    {
+      "pdf_name": "e2b19d2cc2ccab2fd9022326b56b38fb0e772e73.pdf",
+      "company": "CrossFirst Bank",
+      "output_file": "C:\\Source\\vectorless\\data\\enterprise\\markdown\\CrossFirst_Bank_e2b19d2cc2ccab2fd9022326b56b38fb0e772e73.md",
+      "status": "converted",
+      "processing_time": 71.93190169334412,
+      "total_pages": 120,
+      "markdown_size": 459362
+    },
+    {
+      "pdf_name": "f721fa86aa0f17b194fa21917aeabbf8df6511c2.pdf",
+      "company": "TSX_ACQ",
+      "output_file": "C:\\Source\\vectorless\\data\\enterprise\\markdown\\TSX_ACQ_f721fa86aa0f17b194fa21917aeabbf8df6511c2.md",
+      "status": "converted",
+      "processing_time": 38.21600103378296,
+      "total_pages": 67,
+      "markdown_size": 203750
+    }
+  ]
+}
