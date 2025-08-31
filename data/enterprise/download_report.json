@@ -1,0 +1,20 @@
+{
+  "timestamp": "2025-08-31 12:15:45",
+  "pdfs": {
+    "total": 20,
+    "successful": 20,
+    "failed": 0,
+    "total_size_mb": 78.56
+  },
+  "supporting_files": {
+    "questions.json": {
+      "status": "downloaded",
+      "path": "C:\\Source\\vectorless\\data\\enterprise\\questions.json"
+    },
+    "dataset.csv": {
+      "status": "downloaded",
+      "path": "C:\\Source\\vectorless\\data\\enterprise\\dataset.csv"
+    }
+  },
+  "failed_downloads": []
+}
