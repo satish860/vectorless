@@ -225,6 +225,42 @@ class CUADToolExtractor:
                 "✓ Does it use language like 'limited to', 'not exceed', 'maximum'?",
                 "✓ Is it different from general indemnification?",
                 "✓ Does it set specific liability limits?"
+            ],
+            "Change Of Control": [
+                "✓ Does it trigger on ownership/control changes (not just assignment)?",
+                "✓ Are there specific thresholds (merger, acquisition, stock sale)?",
+                "✓ Does it reference corporate events like M&A, change of ownership?",
+                "✓ Is it different from general assignment restrictions?"
+            ],
+            "Audit Rights": [
+                "✓ Does it grant explicit right to examine records/books?",
+                "✓ Are there specific audit procedures or timeframes?",
+                "✓ Is it different from general reporting requirements?",
+                "✓ Does it allow inspection of operations or financial records?"
+            ],
+            "Uncapped Liability": [
+                "✓ Does it explicitly preserve unlimited liability for certain acts?",
+                "✓ Are there carve-outs from liability limitations?",
+                "✓ Does it use language like 'nothing shall limit liability for'?",
+                "✓ Is it different from general indemnification clauses?"
+            ],
+            "Warranty Duration": [
+                "✓ Are there specific time periods for warranties/guarantees?",
+                "✓ Does it specify warranty length (months/years/periods)?",
+                "✓ Is the duration clearly stated (not just general warranties)?",
+                "✓ Does it include timeframes like 'for a period of X'?"
+            ],
+            "Anti-Assignment": [
+                "✓ Does it prohibit assignment without consent?",
+                "✓ Are there restrictions on transferring rights/obligations?",
+                "✓ Does it use language like 'may not assign' or 'shall not transfer'?",
+                "✓ Is it different from change of control provisions?"
+            ],
+            "Post-Termination Services": [
+                "✓ Do obligations survive contract termination?",
+                "✓ Are there specific post-termination duties or services?",
+                "✓ Does it require continued performance after expiry?",
+                "✓ Are there transition or wind-down obligations?"
             ]
         }
         return checklists.get(clause_type, [])
@@ -266,6 +302,48 @@ class CUADToolExtractor:
                 "context_phrases": ["non-compete", "non-competition", "compete with", "competitive business"],
                 "search_strategy": "Distinguish from exclusivity - look for business activity restrictions",
                 "validation_approach": "Confirm restriction on competitive business activities, not just sourcing"
+            },
+            "Change Of Control": {
+                "primary_keywords": ["change of control", "change in control", "merger", "acquisition"],
+                "secondary_keywords": ["ownership", "control", "stock sale", "asset sale", "corporate"],
+                "context_phrases": ["change of control", "change in ownership", "merger or acquisition", "sale of assets"],
+                "search_strategy": "Look for M&A triggers and ownership change events, not general assignment",
+                "validation_approach": "Confirm specific corporate control events trigger contract provisions"
+            },
+            "Audit Rights": {
+                "primary_keywords": ["audit", "inspect", "examine", "review"],
+                "secondary_keywords": ["records", "books", "accounts", "financial", "operations"],
+                "context_phrases": ["right to audit", "audit rights", "inspect records", "examine books"],
+                "search_strategy": "Search for inspection and examination rights over records/operations",
+                "validation_approach": "Distinguish from general reporting - must allow active examination"
+            },
+            "Uncapped Liability": {
+                "primary_keywords": ["nothing shall limit", "unlimited liability", "shall not exclude"],
+                "secondary_keywords": ["liability", "exclude", "limit", "carve-out", "exception"],
+                "context_phrases": ["nothing shall limit liability", "shall not exclude liability", "unlimited liability"],
+                "search_strategy": "Look for carve-outs from liability caps and unlimited liability preservation",
+                "validation_approach": "Identify explicit preservation of unlimited liability for specific acts"
+            },
+            "Warranty Duration": {
+                "primary_keywords": ["warranty", "guarantee", "warranted", "guaranteed"],
+                "secondary_keywords": ["period", "duration", "months", "years", "time"],
+                "context_phrases": ["warranty period", "for a period of", "warranted for", "guarantee period"],
+                "search_strategy": "Search for specific timeframes associated with warranties/guarantees",
+                "validation_approach": "Extract explicit time periods, not just general warranty language"
+            },
+            "Anti-Assignment": {
+                "primary_keywords": ["assign", "assignment", "transfer", "convey"],
+                "secondary_keywords": ["without consent", "prohibited", "may not", "shall not"],
+                "context_phrases": ["may not assign", "assignment prohibited", "without prior consent", "shall not transfer"],
+                "search_strategy": "Look for restrictions on transferring rights/obligations under contract",
+                "validation_approach": "Distinguish from change of control - focus on assignment restrictions"
+            },
+            "Post-Termination Services": {
+                "primary_keywords": ["termination", "expiry", "expiration", "survive"],
+                "secondary_keywords": ["after", "following", "post", "continue", "obligations"],
+                "context_phrases": ["after termination", "survive termination", "post-termination", "following expiry"],
+                "search_strategy": "Search for obligations that continue after contract ends",
+                "validation_approach": "Identify specific duties/services that survive contract termination"
             }
         }
         return search_patterns.get(clause_type, {
@@ -355,6 +433,22 @@ Mark IMPOSSIBLE unless explicit preferential treatment:
 - Must state "better terms than other parties" or similar preferential language
 - General pricing or rate adjustments ≠ Most Favored Nation
 - Look for: "most favored", "preferential treatment", "better terms"
+""",
+            
+            "Revenue/Profit Sharing": """
+Mark IMPOSSIBLE unless explicit revenue or profit sharing obligations:
+- Must require one party to share revenue/profit with counterparty
+- General payment terms ≠ Revenue/profit sharing arrangements
+- Look for: "share revenue", "profit sharing", "revenue split", "percentage of profits"
+- Payment for services ≠ Revenue sharing
+""",
+            
+            "Joint Ip Ownership": """
+Mark IMPOSSIBLE unless explicit joint IP ownership provisions:
+- Must create shared ownership of intellectual property
+- License grants ≠ Joint ownership
+- Look for: "jointly own", "shared ownership", "co-own intellectual property"
+- Individual party IP rights ≠ Joint ownership
 """,
             
             "No-Solicit Of Customers": """
@@ -763,7 +857,7 @@ Search Strategy: {self._get_professional_search_patterns(clause_type).get('searc
 Apply different standards based on clause type:
 
 **FACTUAL CLAUSES** (Liberal threshold - lawyer's practical approach):
-- Document Name, Agreement Date, Parties, Governing Law, Effective Date, Expiration Date
+- Document Name, Agreement Date, Parties, Governing Law, Effective Date, Expiration Date, Warranty Duration
 - Standard: Extract factual information that lawyers need for contract review and analysis
 - Approach: Follow legal review patterns - where lawyers actually look for this information
 - Priority: Practical legal significance over perfect semantic matching
@@ -774,7 +868,7 @@ Apply different standards based on clause type:
 - Avoid false positives from related but distinct concepts
 
 **STANDARD CLAUSES** (Balanced threshold - typical legal provisions):
-- All other clause types
+- All other clause types (Exclusivity, Minimum Commitment, Price Restrictions, etc.)
 - Standard: Extract when clear legal obligation or provision exists
 
 ## COMMON CONFUSIONS TO AVOID
@@ -800,6 +894,12 @@ Apply different standards based on clause type:
 - Only related but distinct concepts found (see confusions above)
 - You have thoroughly examined all potentially relevant sections
 - **CRITICAL**: When genuinely unsure about relevance → mark impossible=true
+
+**COMPREHENSIVE EXTRACTION** - For multi-instance clauses:
+- Many clause types appear in multiple sections (Change of Control, Cap on Liability, etc.)
+- Use systematic section-by-section review for complex clauses
+- Search ALL potentially relevant sections, not just the first match found
+- Look for variations: "change in control", "change of control", "merger", "acquisition"
 
 **TEXT EXTRACTION STANDARDS**:
 - Remove section numbers, titles, and formatting artifacts

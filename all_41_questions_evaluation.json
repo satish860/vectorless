@@ -1,10 +1,10 @@
 {
   "summary": {
     "total_questions": 41,
-    "avg_accuracy": 0.9414634146341464,
-    "impossible_classification_accuracy": 0.9512195121951219,
-    "total_exact_matches": 30,
-    "total_partial_matches": 9,
+    "avg_accuracy": 0.6117335239286459,
+    "impossible_classification_accuracy": 0.6829268292682927,
+    "total_exact_matches": 2,
+    "total_partial_matches": 6,
     "total_ground_truth_answers": 46
   },
   "detailed_results": [
@@ -16,62 +16,26 @@
       "impossible_correct": true,
       "text_matches": [
         {
-          "predicted": "DISTRIBUTOR AGREEMENT",
+          "predicted": "EXHIBIT 10.6\n\n                              DISTRIBUTOR AGREEMENT",
           "best_ground_truth": "DISTRIBUTOR AGREEMENT",
-          "overlap_score": 1.0
-        },
-        {
-          "predicted": "THIS  DISTRIBUTOR  AGREEMENT (the  \"Agreement\")  is made by and between Electric City Corp.,  a Dela...",
-          "best_ground_truth": "DISTRIBUTOR AGREEMENT",
-          "overlap_score": 1.0
+          "overlap_score": 0.8
         }
       ],
-      "best_overlap": 1.0,
-      "exact_matches": 2,
-      "partial_matches": 0,
+      "best_overlap": 0.8,
+      "exact_matches": 0,
+      "partial_matches": 1,
       "total_ground_truth": 1,
       "question_number": 1
     },
     {
       "question_id": "LIMEENERGYCO_09_09_1999-EX-10-DISTRIBUTOR AGREEMENT__Parties",
       "clause_type": "Parties",
-      "predicted_impossible": false,
+      "predicted_impossible": true,
       "ground_truth_impossible": false,
-      "impossible_correct": true,
-      "text_matches": [
-        {
-          "predicted": "Electric City Corp.",
-          "best_ground_truth": "Electric City Corp.",
-          "overlap_score": 1.0
-        },
-        {
-          "predicted": "Company",
-          "best_ground_truth": "Company",
-          "overlap_score": 1.0
-        },
-        {
-          "predicted": "Electric City of Illinois LLC",
-          "best_ground_truth": "Electric City of Illinois LLC",
-          "overlap_score": 1.0
-        },
-        {
-          "predicted": "Distributor",
-          "best_ground_truth": "Distributor",
-          "overlap_score": 1.0
-        },
-        {
-          "predicted": "Electric City of Illinois L.L.C.",
-          "best_ground_truth": "Electric City of Illinois L.L.C.",
-          "overlap_score": 1.0
-        },
-        {
-          "predicted": "Electric City Corp.",
-          "best_ground_truth": "Electric City Corp.",
-          "overlap_score": 1.0
-        }
-      ],
-      "best_overlap": 1.0,
-      "exact_matches": 6,
+      "impossible_correct": false,
+      "text_matches": [],
+      "best_overlap": 0.0,
+      "exact_matches": 0,
       "partial_matches": 0,
       "total_ground_truth": 5,
       "question_number": 2
@@ -84,19 +48,9 @@
       "impossible_correct": true,
       "text_matches": [
         {
-          "predicted": "THIS DISTRIBUTOR AGREEMENT (the \"Agreement\") is made by and between Electric City Corp., a Delaware ...",
+          "predicted": "this 7th day of September, 1999",
           "best_ground_truth": "7th day of September, 1999.",
           "overlap_score": 0.8
-        },
-        {
-          "predicted": "The term of this Agreement shall be ten (10) years (the \"Term\") which shall commence on the date upo...",
-          "best_ground_truth": "7th day of September, 1999.",
-          "overlap_score": 0.2
-        },
-        {
-          "predicted": "Unless earlier terminated otherwise provided therein, this Agreement, subject to the commencement da...",
-          "best_ground_truth": "7th day of September, 1999.",
-          "overlap_score": 0.2
         }
       ],
       "best_overlap": 0.8,
@@ -108,29 +62,13 @@
     {
       "question_id": "LIMEENERGYCO_09_09_1999-EX-10-DISTRIBUTOR AGREEMENT__Effective Date",
       "clause_type": "Effective Date",
-      "predicted_impossible": false,
+      "predicted_impossible": true,
       "ground_truth_impossible": false,
-      "impossible_correct": true,
-      "text_matches": [
-        {
-          "predicted": "THIS DISTRIBUTOR AGREEMENT (the \"Agreement\") is made by and between Electric City Corp., a Delaware ...",
-          "best_ground_truth": "The term of this  Agreement  shall be ten (10)                            years (the \"Term\")  which ...",
-          "overlap_score": 0.19230769230769232
-        },
-        {
-          "predicted": "The term of this Agreement shall be ten (10) years (the \"Term\") which shall commence on the date upo...",
-          "best_ground_truth": "The term of this  Agreement  shall be ten (10)                            years (the \"Term\")  which ...",
-          "overlap_score": 1.0
-        },
-        {
-          "predicted": "This Agreement, subject to the commencement date established in Section 1.3, shall be effective imme...",
-          "best_ground_truth": "Unless  earlier   terminated   otherwise  provided                   therein,  this  Agreement,  sub...",
-          "overlap_score": 0.7142857142857143
-        }
-      ],
-      "best_overlap": 1.0,
-      "exact_matches": 1,
-      "partial_matches": 1,
+      "impossible_correct": false,
+      "text_matches": [],
+      "best_overlap": 0.0,
+      "exact_matches": 0,
+      "partial_matches": 0,
       "total_ground_truth": 2,
       "question_number": 4
     },
@@ -144,17 +82,12 @@
         {
           "predicted": "The term of this Agreement shall be ten (10) years (the \"Term\") which shall commence on the date upo...",
           "best_ground_truth": "The term of this  Agreement  shall be ten (10)                            years (the \"Term\")  which ...",
-          "overlap_score": 1.0
-        },
-        {
-          "predicted": "Company will, during the Term of this Agreement (and any renewal term), provide Distributor, at Dist...",
-          "best_ground_truth": "The term of this  Agreement  shall be ten (10)                            years (the \"Term\")  which ...",
-          "overlap_score": 0.38461538461538464
+          "overlap_score": 0.8461538461538461
         }
       ],
-      "best_overlap": 1.0,
-      "exact_matches": 1,
-      "partial_matches": 0,
+      "best_overlap": 0.8461538461538461,
+      "exact_matches": 0,
+      "partial_matches": 1,
       "total_ground_truth": 1,
       "question_number": 5
     },
@@ -166,14 +99,14 @@
       "impossible_correct": true,
       "text_matches": [
         {
-          "predicted": "The term of this Agreement shall be ten (10) years (the \"Term\") which shall commence on the date upo...",
+          "predicted": "the Agreement shall be renewable on an annual basis for one (1) year terms for up to another ten (10...",
           "best_ground_truth": "If Distributor                            complies with all of the terms of this Agreement, the     ...",
-          "overlap_score": 1.0
+          "overlap_score": 0.8571428571428571
         }
       ],
-      "best_overlap": 1.0,
-      "exact_matches": 1,
-      "partial_matches": 0,
+      "best_overlap": 0.8571428571428571,
+      "exact_matches": 0,
+      "partial_matches": 1,
       "total_ground_truth": 1,
       "question_number": 6
     },
@@ -193,18 +126,12 @@
     {
       "question_id": "LIMEENERGYCO_09_09_1999-EX-10-DISTRIBUTOR AGREEMENT__Governing Law",
       "clause_type": "Governing Law",
-      "predicted_impossible": false,
+      "predicted_impossible": true,
       "ground_truth_impossible": false,
-      "impossible_correct": true,
-      "text_matches": [
-        {
-          "predicted": "This Agreement is to be construed according to the laws of the State of Illinois.",
-          "best_ground_truth": "This Agreement is to be construed according to the laws          of the State of Illinois.",
-          "overlap_score": 1.0
-        }
-      ],
-      "best_overlap": 1.0,
-      "exact_matches": 1,
+      "impossible_correct": false,
+      "text_matches": [],
+      "best_overlap": 0.0,
+      "exact_matches": 0,
       "partial_matches": 0,
       "total_ground_truth": 1,
       "question_number": 8
@@ -243,28 +170,23 @@
       "impossible_correct": true,
       "text_matches": [
         {
-          "predicted": "The Company appoints the Distributor as an exclusive distributor of Products in the Market, subject ...",
-          "best_ground_truth": "The Company appoints the Distributor as an  exclusive  distributor  of Products in the Market,  subj...",
-          "overlap_score": 1.0
-        },
-        {
           "predicted": "Company hereby appoints Distributor as Company's exclusive distributor within the Market and grants ...",
           "best_ground_truth": "Company  hereby   appoints                            Distributor as Company's exclusive distributor...",
+          "overlap_score": 0.5666666666666667
+        },
+        {
+          "predicted": "The Distributor shall not order or purchase Products from any source other than the Company.",
+          "best_ground_truth": "The  Distributor  shall  not order or                   purchase Products from any source other than...",
           "overlap_score": 1.0
         },
         {
-          "predicted": "In order to maintain the exclusive rights to sell, lease, distribute and service Products in the Mar...",
+          "predicted": "Distributor shall have the option of becoming distributor of such other Products or devices within t...",
           "best_ground_truth": "The  Distributor  shall  not order or                   purchase Products from any source other than...",
-          "overlap_score": 0.5714285714285714
-        },
-        {
-          "predicted": "The Distributor shall order Products from the Company on a purchase order form mutually acceptable t...",
-          "best_ground_truth": "The  Distributor  shall  not order or                   purchase Products from any source other than...",
-          "overlap_score": 1.0
+          "overlap_score": 0.42857142857142855
         }
       ],
       "best_overlap": 1.0,
-      "exact_matches": 3,
+      "exact_matches": 1,
       "partial_matches": 1,
       "total_ground_truth": 3,
       "question_number": 11
@@ -272,24 +194,13 @@
     {
       "question_id": "LIMEENERGYCO_09_09_1999-EX-10-DISTRIBUTOR AGREEMENT__No-Solicit Of Customers",
       "clause_type": "No-Solicit Of Customers",
-      "predicted_impossible": false,
+      "predicted_impossible": true,
       "ground_truth_impossible": false,
-      "impossible_correct": true,
-      "text_matches": [
-        {
-          "predicted": "During the Term of this Agreement and for a period of twelve (12) months thereafter, the Distributor...",
-          "best_ground_truth": "Term of the  Agreement  and for a period of  eighteen\n\n\n\n\n\n                           (18) months th...",
-          "overlap_score": 0.6428571428571429
-        },
-        {
-          "predicted": "Distributor further agrees that it will not interfere with or otherwise disrupt the business relatio...",
-          "best_ground_truth": "Distributor further agrees that it will not interfere                            with or  otherwise ...",
-          "overlap_score": 1.0
-        }
-      ],
-      "best_overlap": 1.0,
-      "exact_matches": 1,
-      "partial_matches": 1,
+      "impossible_correct": false,
+      "text_matches": [],
+      "best_overlap": 0.0,
+      "exact_matches": 0,
+      "partial_matches": 0,
       "total_ground_truth": 2,
       "question_number": 12
     },
@@ -309,29 +220,13 @@
     {
       "question_id": "LIMEENERGYCO_09_09_1999-EX-10-DISTRIBUTOR AGREEMENT__No-Solicit Of Employees",
       "clause_type": "No-Solicit Of Employees",
-      "predicted_impossible": false,
+      "predicted_impossible": true,
       "ground_truth_impossible": false,
-      "impossible_correct": true,
-      "text_matches": [
-        {
-          "predicted": "During the Term of this Agreement and for a period of twelve (12) months thereafter, the Distributor...",
-          "best_ground_truth": "During the Term of this Agreement and for a period of                            twelve (12) months ...",
-          "overlap_score": 1.0
-        },
-        {
-          "predicted": "Distributor further agrees that it will not interfere with or otherwise disrupt the business relatio...",
-          "best_ground_truth": "During the Term of this Agreement and for a period of                            twelve (12) months ...",
-          "overlap_score": 0.5853658536585366
-        },
-        {
-          "predicted": "In the event that either Distributor or Company fails to comply with the terms of this Agreement, bo...",
-          "best_ground_truth": "During the Term of this Agreement and for a period of                            twelve (12) months ...",
-          "overlap_score": 0.36585365853658536
-        }
-      ],
-      "best_overlap": 1.0,
-      "exact_matches": 1,
-      "partial_matches": 1,
+      "impossible_correct": false,
+      "text_matches": [],
+      "best_overlap": 0.0,
+      "exact_matches": 0,
+      "partial_matches": 0,
       "total_ground_truth": 1,
       "question_number": 14
     },
@@ -367,32 +262,21 @@
       "predicted_impossible": false,
       "ground_truth_impossible": false,
       "impossible_correct": true,
-      "text_matches": [
-        {
-          "predicted": "Should Company introduce other products or devices as contemplated by recital paragraph \"A\", Distrib...",
-          "best_ground_truth": "Distributor  shall exercise its option to                   become  exclusive  Distributor of other ...",
-          "overlap_score": 1.0
-        },
-        {
-          "predicted": "Company hereby appoints Distributor as Company's exclusive distributor within the Market and grants ...",
-          "best_ground_truth": "If                   Distributor  does not exercise its option as herein  provided,                 ...",
-          "overlap_score": 0.6521739130434783
-        }
-      ],
-      "best_overlap": 1.0,
-      "exact_matches": 1,
-      "partial_matches": 1,
+      "text_matches": [],
+      "best_overlap": 0.0,
+      "exact_matches": 0,
+      "partial_matches": 0,
       "total_ground_truth": 3,
       "question_number": 17
     },
     {
       "question_id": "LIMEENERGYCO_09_09_1999-EX-10-DISTRIBUTOR AGREEMENT__Change Of Control",
       "clause_type": "Change Of Control",
-      "predicted_impossible": true,
+      "predicted_impossible": false,
       "ground_truth_impossible": true,
-      "impossible_correct": true,
+      "impossible_correct": false,
       "text_matches": [],
-      "best_overlap": 1.0,
+      "best_overlap": 0.0,
       "exact_matches": 0,
       "partial_matches": 0,
       "total_ground_truth": 0,
@@ -401,18 +285,12 @@
     {
       "question_id": "LIMEENERGYCO_09_09_1999-EX-10-DISTRIBUTOR AGREEMENT__Anti-Assignment",
       "clause_type": "Anti-Assignment",
-      "predicted_impossible": false,
+      "predicted_impossible": true,
       "ground_truth_impossible": false,
-      "impossible_correct": true,
-      "text_matches": [
-        {
-          "predicted": "No assignment of this Agreement or any right accruing hereunder shall be made by the Distributor in ...",
-          "best_ground_truth": "No  assignment  of this  Agreement  or any  right                   accruing  hereunder  shall be ma...",
-          "overlap_score": 1.0
-        }
-      ],
-      "best_overlap": 1.0,
-      "exact_matches": 1,
+      "impossible_correct": false,
+      "text_matches": [],
+      "best_overlap": 0.0,
+      "exact_matches": 0,
       "partial_matches": 0,
       "total_ground_truth": 2,
       "question_number": 19
@@ -433,23 +311,12 @@
     {
       "question_id": "LIMEENERGYCO_09_09_1999-EX-10-DISTRIBUTOR AGREEMENT__Price Restrictions",
       "clause_type": "Price Restrictions",
-      "predicted_impossible": false,
+      "predicted_impossible": true,
       "ground_truth_impossible": false,
-      "impossible_correct": true,
-      "text_matches": [
-        {
-          "predicted": "Prices For Basic Units. The prices for Products in the first Product Year are supplied by Company as...",
-          "best_ground_truth": "The Company  also  reserves  the right to                            increase  or  decrease  the pri...",
-          "overlap_score": 1.0
-        },
-        {
-          "predicted": "The Distributor may resell Products at such price, as the Distributor, in its sole discretion, shall...",
-          "best_ground_truth": "The Company  also  reserves  the right to                            increase  or  decrease  the pri...",
-          "overlap_score": 0.26666666666666666
-        }
-      ],
-      "best_overlap": 1.0,
-      "exact_matches": 1,
+      "impossible_correct": false,
+      "text_matches": [],
+      "best_overlap": 0.0,
+      "exact_matches": 0,
       "partial_matches": 0,
       "total_ground_truth": 2,
       "question_number": 21
@@ -457,44 +324,13 @@
     {
       "question_id": "LIMEENERGYCO_09_09_1999-EX-10-DISTRIBUTOR AGREEMENT__Minimum Commitment",
       "clause_type": "Minimum Commitment",
-      "predicted_impossible": false,
+      "predicted_impossible": true,
       "ground_truth_impossible": false,
-      "impossible_correct": true,
-      "text_matches": [
-        {
-          "predicted": "On the commencement of the Term Distributor will issue to the Company an irrevocable letter of credi...",
-          "best_ground_truth": "A minimum of a $250,000.00  purchase  order  must be  received  by Company by the first of each mont...",
-          "overlap_score": 1.0
-        },
-        {
-          "predicted": "(A) 375 units in the first Product Year (1999)\n\n(B) 750 units in the next succeeding Product Year; (...",
-          "best_ground_truth": "(A)    375 units in the first Product Year (1999)\n\n                  (B)    750 units in the next su...",
-          "overlap_score": 1.0
-        },
-        {
-          "predicted": "For purposes of this Agreement, a Product Year shall be the twelve (12) month period following the c...",
-          "best_ground_truth": "A minimum of a $250,000.00  purchase  order  must be  received  by Company by the first of each mont...",
-          "overlap_score": 0.47368421052631576
-        },
-        {
-          "predicted": "If the Distributor shall fail to purchase the minimum number of units in any year, the Distributor's...",
-          "best_ground_truth": "If the  Distributor  shall fail to purchase the minimum number of units in any year, the  Distributo...",
-          "overlap_score": 0.9655172413793104
-        },
-        {
-          "predicted": "The Distributor shall order Products from the Company on a purchase order form mutually acceptable t...",
-          "best_ground_truth": "A minimum of a $250,000.00  purchase  order  must be  received  by Company by the first of each mont...",
-          "overlap_score": 0.5263157894736842
-        },
-        {
-          "predicted": "Company will, during the Term of this Agreement (and any renewal term), provide Distributor, at Dist...",
-          "best_ground_truth": "If the  Distributor  shall fail to purchase the minimum number of units in any year, the  Distributo...",
-          "overlap_score": 0.3793103448275862
-        }
-      ],
-      "best_overlap": 1.0,
-      "exact_matches": 3,
-      "partial_matches": 1,
+      "impossible_correct": false,
+      "text_matches": [],
+      "best_overlap": 0.0,
+      "exact_matches": 0,
+      "partial_matches": 0,
       "total_ground_truth": 5,
       "question_number": 22
     },
@@ -514,11 +350,11 @@
     {
       "question_id": "LIMEENERGYCO_09_09_1999-EX-10-DISTRIBUTOR AGREEMENT__Ip Ownership Assignment",
       "clause_type": "Ip Ownership Assignment",
-      "predicted_impossible": false,
+      "predicted_impossible": true,
       "ground_truth_impossible": true,
-      "impossible_correct": false,
+      "impossible_correct": true,
       "text_matches": [],
-      "best_overlap": 0.0,
+      "best_overlap": 1.0,
       "exact_matches": 0,
       "partial_matches": 0,
       "total_ground_truth": 0,
@@ -545,24 +381,14 @@
       "impossible_correct": true,
       "text_matches": [
         {
-          "predicted": "Company hereby appoints Distributor as Company's exclusive distributor within the Market and grants ...",
-          "best_ground_truth": "Company  hereby   appoints                            Distributor as Company's exclusive distributor...",
-          "overlap_score": 1.0
-        },
-        {
-          "predicted": "License. The Company hereby grants the Distributor the right to do business and use the name \"Electr...",
+          "predicted": "License.  The Company  hereby grants the  Distributor                            the right to do bus...",
           "best_ground_truth": "The Company  hereby grants the  Distributor                            the right to do business  and...",
-          "overlap_score": 1.0
-        },
-        {
-          "predicted": "The Distributor acknowledges and agrees the except as provided by Section 1.2 of this Agreement, thi...",
-          "best_ground_truth": "The Company  hereby grants the  Distributor                            the right to do business  and...",
-          "overlap_score": 0.4074074074074074
+          "overlap_score": 0.7777777777777778
         }
       ],
-      "best_overlap": 1.0,
-      "exact_matches": 2,
-      "partial_matches": 0,
+      "best_overlap": 0.7777777777777778,
+      "exact_matches": 0,
+      "partial_matches": 1,
       "total_ground_truth": 2,
       "question_number": 26
     },
@@ -647,29 +473,13 @@
     {
       "question_id": "LIMEENERGYCO_09_09_1999-EX-10-DISTRIBUTOR AGREEMENT__Post-Termination Services",
       "clause_type": "Post-Termination Services",
-      "predicted_impossible": false,
+      "predicted_impossible": true,
       "ground_truth_impossible": false,
-      "impossible_correct": true,
-      "text_matches": [
-        {
-          "predicted": "The termination of this Agreement shall not relieve either party hereto from obligations which have ...",
-          "best_ground_truth": "and which the Company has not repurchased.",
-          "overlap_score": 0.42857142857142855
-        },
-        {
-          "predicted": "Upon the expiration or termination of this Agreement, pursuant to Section 4.1 or 4.2 hereof, the Com...",
-          "best_ground_truth": "Upon the expiration or termination of                   this  Agreement,  pursuant to Section  4.1 o...",
-          "overlap_score": 1.0
-        },
-        {
-          "predicted": "During the Term of this Agreement and for three years thereafter, the Distributor (on behalf of itse...",
-          "best_ground_truth": "and which the Company has not repurchased.",
-          "overlap_score": 0.8571428571428571
-        }
-      ],
-      "best_overlap": 1.0,
-      "exact_matches": 1,
-      "partial_matches": 1,
+      "impossible_correct": false,
+      "text_matches": [],
+      "best_overlap": 0.0,
+      "exact_matches": 0,
+      "partial_matches": 0,
       "total_ground_truth": 4,
       "question_number": 33
     },
@@ -715,11 +525,11 @@
     {
       "question_id": "LIMEENERGYCO_09_09_1999-EX-10-DISTRIBUTOR AGREEMENT__Liquidated Damages",
       "clause_type": "Liquidated Damages",
-      "predicted_impossible": true,
+      "predicted_impossible": false,
       "ground_truth_impossible": true,
-      "impossible_correct": true,
+      "impossible_correct": false,
       "text_matches": [],
-      "best_overlap": 1.0,
+      "best_overlap": 0.0,
       "exact_matches": 0,
       "partial_matches": 0,
       "total_ground_truth": 0,
@@ -731,30 +541,9 @@
       "predicted_impossible": false,
       "ground_truth_impossible": false,
       "impossible_correct": true,
-      "text_matches": [
-        {
-          "predicted": "Company further warrants that the Products sold hereunder shall be free from defects in design, mate...",
-          "best_ground_truth": "Company  further  warrants that the                   Products sold hereunder  shall be free from de...",
-          "overlap_score": 1.0
-        },
-        {
-          "predicted": "In the event of any damages or other defect in a Product which is discovered by Distributor within 3...",
-          "best_ground_truth": "In the event of any  damages or                            other  defect in a  Product  which is  di...",
-          "overlap_score": 1.0
-        },
-        {
-          "predicted": "The Company shall not have any obligation with respect to Products after 365 days following delivery...",
-          "best_ground_truth": "The                            Company shall not have any obligation with respect to                ...",
-          "overlap_score": 1.0
-        },
-        {
-          "predicted": "The Company will make available to Distributor comprehensive technical support for the first Product...",
-          "best_ground_truth": "The Company reserves the                   right to reject any Products  that are not factory  seale...",
-          "overlap_score": 0.16666666666666666
-        }
-      ],
-      "best_overlap": 1.0,
-      "exact_matches": 3,
+      "text_matches": [],
+      "best_overlap": 0.0,
+      "exact_matches": 0,
       "partial_matches": 0,
       "total_ground_truth": 8,
       "question_number": 38
@@ -762,18 +551,12 @@
     {
       "question_id": "LIMEENERGYCO_09_09_1999-EX-10-DISTRIBUTOR AGREEMENT__Insurance",
       "clause_type": "Insurance",
-      "predicted_impossible": false,
+      "predicted_impossible": true,
       "ground_truth_impossible": false,
-      "impossible_correct": true,
-      "text_matches": [
-        {
-          "predicted": "Company will carry a reasonable amount of product liability insurance through a reasonably acceptabl...",
-          "best_ground_truth": "Company will carry a reasonable                   amount of product  liability  insurance  through a...",
-          "overlap_score": 1.0
-        }
-      ],
-      "best_overlap": 1.0,
-      "exact_matches": 1,
+      "impossible_correct": false,
+      "text_matches": [],
+      "best_overlap": 0.0,
+      "exact_matches": 0,
       "partial_matches": 0,
       "total_ground_truth": 1,
       "question_number": 39
@@ -786,19 +569,14 @@
       "impossible_correct": true,
       "text_matches": [
         {
-          "predicted": "During the Term of this Agreement and                   for three  years  thereafter,  the  Distribu...",
+          "predicted": "No Action to Invalidate. During the Term of this Agreement and for three years thereafter, the Distr...",
           "best_ground_truth": "During the Term of this Agreement and                   for three  years  thereafter,  the  Distribu...",
-          "overlap_score": 0.8
-        },
-        {
-          "predicted": "The Distributor acknowledges and agrees the except                   as provided by Section 1.2 of t...",
-          "best_ground_truth": "During the Term of this Agreement and                   for three  years  thereafter,  the  Distribu...",
-          "overlap_score": 0.36507936507936506
+          "overlap_score": 1.0
         }
       ],
-      "best_overlap": 0.8,
-      "exact_matches": 0,
-      "partial_matches": 1,
+      "best_overlap": 1.0,
+      "exact_matches": 1,
+      "partial_matches": 0,
       "total_ground_truth": 1,
       "question_number": 40
     },
