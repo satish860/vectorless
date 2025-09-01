@@ -93,6 +93,8 @@ def get_structured_document(document_with_line_numbers: str, max_retries: int = 
 
 Your task is to create a StructuredDocument with detailed sections that include summaries and searchable keywords.
 
+CRITICAL REQUIREMENT: You MUST segment the ENTIRE document starting from line [0]. Include ALL content including document headers, title page, parties identification, and any preamble content. The first section MUST start at line [0] or [1]. Do not skip any content at the beginning of the document.
+
 CHAIN OF THOUGHT PROCESS:
 For each section, think step by step:
 
@@ -103,9 +105,11 @@ Step 4: IDENTIFY searchable terms - What keywords would a lawyer or QA system se
 Step 5: SYNTHESIZE into summary - Create a 2-3 sentence summary that includes the key legal terms and provisions.
 
 INPUT DOCUMENT FORMAT:
-Each line is marked with its line number in square brackets (e.g. [1], [2], [3], etc). Use these line numbers for start_index and end_index.
+Each line is marked with its line number in square brackets (e.g. [0], [1], [2], [3], etc). Use these line numbers for start_index and end_index.
 
-SECTION CATEGORIES to consider:
+SECTION CATEGORIES to consider (in order from beginning):
+- Document header/title (contract name, date, document type)
+- Parties identification (contracting entities, addresses, roles)
 - Contract identification and parties
 - Terms and duration  
 - Obligations and responsibilities

@@ -66,6 +66,8 @@ Your task is to create a StructuredFinancialDocument with detailed sections opti
 
 DOCUMENT TYPE: {document_type}
 
+CRITICAL REQUIREMENT: You MUST segment the ENTIRE document starting from line [0]. Include ALL content including document headers, company identification, table of contents, and front matter. The first section MUST start at line [0] or [1]. Do not skip any content at the beginning of the document.
+
 CHAIN OF THOUGHT PROCESS:
 For each section, think step by step:
 
@@ -77,7 +79,13 @@ Step 5: CAPTURE financial metrics - What specific numbers, ratios, percentages, 
 Step 6: SYNTHESIZE into summary - Create a 2-3 sentence summary that includes key business and financial insights.
 
 INPUT DOCUMENT FORMAT:
-Each line is marked with its line number in square brackets (e.g. [1], [2], [3], etc). Use these line numbers for start_index and end_index.
+Each line is marked with its line number in square brackets (e.g. [0], [1], [2], [3], etc). Use these line numbers for start_index and end_index.
+
+DOCUMENT SECTIONS to identify (in order from beginning):
+- Document Header/Cover Page (company name, filing type, date)
+- Table of Contents (index of sections and page numbers)
+- Forward-Looking Statements (risk disclaimers)
+- SEC Filing Information (commission file number, registration details)
 
 SEC FILING SECTIONS to identify (for 10-K documents):
 - Item 1: Business (company operations, products, services, competition)
@@ -92,6 +100,7 @@ SEC FILING SECTIONS to identify (for 10-K documents):
 - Other regulatory sections
 
 BUSINESS/FINANCIAL CONCEPTS to consider:
+- Document identification and metadata
 - Business strategy and operations
 - Financial performance and metrics
 - Risk assessment and management
